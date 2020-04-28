@@ -26,6 +26,8 @@ sudo apt-get install -y wget
 sudo apt-get install -y perl
 sudo apt-get install -y rustc
 sudo apt-get install -y make
+sudo apt-get install -y nodejs
+
 
 #Installing GO.
 
