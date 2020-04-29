@@ -189,7 +189,7 @@ echo "Done!"
 
 #Install GitHub Subdomains
 echo "Installing GithubSubdomains..."
-https://github.com/gwen001/github-search.git
+git clone https://github.com/gwen001/github-search.git
 cd ~/tools/github-search
 pip install -r requirements.txt
 cd ~/tools/
@@ -197,7 +197,7 @@ echo "Done!"
 
 #Install JSearch
 echo "Installing JSearch..."
-https://github.com/incogbyte/jsearch.git
+git clone https://github.com/incogbyte/jsearch.git
 cd ~/tools/jsearch
 pip3 install -r requirements.txt
 cd ~/tools/
@@ -205,7 +205,7 @@ echo "Done!"
 
 #Install Linkfinder
 echo "Installing Linkfinder..."
-https://github.com/GerbenJavado/LinkFinder.git
+git clone https://github.com/GerbenJavado/LinkFinder.git
 cd ~/tools/LinkFinder
 pip3 install -r requirements.txt
 cd ~/tools/
