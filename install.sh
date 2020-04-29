@@ -96,7 +96,7 @@ echo "Done!"
 
 #Install Subfinder
 echo "Installing Subfinder..."
-go get -v -u github.com/projectdiscovery/subfinder/cmd/subfinder
+go get -u github.com/projectdiscovery/subfinder/cmd/subfinder
 echo "Done!"
 
 #Install GoSpider
