@@ -132,7 +132,7 @@ echo "Done!"
 
 #Install AWSCLI
 echo "Installing AWSCli..."
-apt install -y awscli
+sudo apt install -y awscli
 echo "Don't forget to set up AWS credentials!"
 echo "Done!"
 
