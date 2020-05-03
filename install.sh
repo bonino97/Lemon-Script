@@ -94,11 +94,6 @@ echo "Installing Hakrawler..."
 go get github.com/hakluke/hakrawler
 echo "Done!"
 
-#Install Subfinder
-echo "Installing Subfinder..."
-go get -u github.com/projectdiscovery/subfinder/cmd/subfinder
-echo "Done!"
-
 #Install GoSpider
 echo "Installing GoSpider..."
 go get -u github.com/jaeles-project/gospider
@@ -163,15 +158,12 @@ git clone https://github.com/jobertabma/virtual-host-discovery.git
 cd ~/tools/
 echo "Done!"
 
-#Downloading SecLists
-echo "Downloading SecLists..."
-git clone https://github.com/danielmiessler/SecLists.git
-cd ~/tools/
-echo "Done!"
-
 #Installing Altdns
 echo "Installing AltDNS..."
-pip install py-altdns
+git clone https://github.com/infosec-au/altdns.git
+cd ~/tools/altdns
+python setup.py build
+python setup.py install
 cd ~/tools/
 echo "Done!"
 
@@ -191,7 +183,7 @@ echo "Done!"
 echo "Installing GithubSubdomains..."
 git clone https://github.com/gwen001/github-search.git
 cd ~/tools/github-search
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 cd ~/tools/
 echo "Done!"
 
@@ -208,6 +200,16 @@ echo "Installing Linkfinder..."
 git clone https://github.com/GerbenJavado/LinkFinder.git
 cd ~/tools/LinkFinder
 pip3 install -r requirements.txt
+cd ~/tools/
+echo "Done!"
+
+#Install Subfinder
+echo "Installing Subfinder..."
+mkdir ~/tools/subfinder
+cd ~/tools/subfinder
+wget https://github.com/projectdiscovery/subfinder/releases/download/v2.3.2/subfinder-linux-amd64.tar
+tar -xzvf subfinder-linux-amd64.tar
+mv subfinder-linux-amd64 /usr/bin/subfinder
 cd ~/tools/
 echo "Done!"
 
