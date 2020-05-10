@@ -84,6 +84,11 @@ echo "Installing Gobuster..."
 go get github.com/OJ/gobuster
 echo "Done!"
 
+#Install Gau
+echo "Installing Gau..."
+GO111MODULE=on go get -u -v github.com/lc/gau
+echo "Done!"
+
 #Install Hakcheckurl
 echo "Installing Hakcheckurl..."
 go get github.com/hakluke/hakcheckurl
